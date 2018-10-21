@@ -1,0 +1,65 @@
+Name:                MySample
+Version:     2.4.0.0
+Synopsis:    
+Description:         
+Homepage:       
+license: BSD3
+license-file: LICENSE
+Author:              
+Maintainer:  
+Category:       
+Tested-with:    GHC >= 7.6
+Build-Type:  Simple
+cabal-version:  >=1.10
+Extra-source-files:
+
+                       csrc/MySampleA.h
+                       csrc/MySampleB.h
+                       csrc/test.h
+                       csrc/MySampleA.cpp
+                       csrc/MySampleB.cpp
+                       csrc/test.cpp
+
+
+
+
+Library
+  default-language: Haskell2010
+  hs-source-dirs: src
+  ghc-options:  -Wall -funbox-strict-fields -fno-warn-unused-do-bind -fno-warn-orphans -fno-warn-unused-imports
+  ghc-prof-options: -caf-all -auto-all
+  cc-options: -std=c++14
+  Build-Depends: base > 4 && < 5, fficxx >= 0.5, fficxx-runtime >= 0.5, template-haskell
+  Exposed-Modules:
+                       MySample
+                       MySample.A
+                       MySample.B
+                       MySample.A.RawType
+                       MySample.B.RawType
+                       MySample.A.FFI
+                       MySample.B.FFI
+                       MySample.A.Interface
+                       MySample.B.Interface
+                       MySample.A.Cast
+                       MySample.B.Cast
+                       MySample.A.Implementation
+                       MySample.B.Implementation
+
+  Other-Modules:
+                       
+
+  extra-lib-dirs: 
+  extra-libraries:    stdc++ 
+  Include-dirs:       csrc 
+  pkgconfig-depends: 
+  Install-includes:
+                       MySampleType.h
+                       MySampleA.h
+                       MySampleB.h
+                       test.h
+
+  C-sources:
+                       csrc/MySampleA.cpp
+                       csrc/MySampleB.cpp
+                       csrc/test.cpp
+

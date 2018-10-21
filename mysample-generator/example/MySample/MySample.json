@@ -1,0 +1,65 @@
+{
+    "homepage": "",
+    "extraIncludeDirs": [],
+    "otherModules": [
+        ""
+    ],
+    "category": "",
+    "ccOptions": [
+        "-std=c++14"
+    ],
+    "pkgname": "MySample",
+    "cppFiles": [
+        "csrc/MySampleA.cpp",
+        "csrc/MySampleB.cpp",
+        "csrc/test.cpp"
+    ],
+    "maintainer": "",
+    "exposedModules": [
+        "MySample",
+        "MySample.A",
+        "MySample.B",
+        "MySample.A.RawType",
+        "MySample.B.RawType",
+        "MySample.A.FFI",
+        "MySample.B.FFI",
+        "MySample.A.Interface",
+        "MySample.B.Interface",
+        "MySample.A.Cast",
+        "MySample.B.Cast",
+        "MySample.A.Implementation",
+        "MySample.B.Implementation"
+    ],
+    "csrcFiles": [
+        "csrc/MySampleA.h",
+        "csrc/MySampleB.h",
+        "csrc/test.h",
+        "csrc/MySampleA.cpp",
+        "csrc/MySampleB.cpp",
+        "csrc/test.cpp"
+    ],
+    "extraFiles": [],
+    "sourcerepository": "",
+    "version": "2.4.0.0",
+    "synopsis": "",
+    "author": "",
+    "licenseFile": "LICENSE",
+    "license": "BSD3",
+    "extraLibraries": [],
+    "pkgconfigDepends": [],
+    "buildtype": "Simple",
+    "pkgdeps": [
+        "base > 4 && < 5",
+        "fficxx >= 0.5",
+        "fficxx-runtime >= 0.5",
+        "template-haskell"
+    ],
+    "description": "",
+    "extraLibDirs": [],
+    "includeFiles": [
+        "MySampleType.h",
+        "MySampleA.h",
+        "MySampleB.h",
+        "test.h"
+    ]
+}

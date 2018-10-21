@@ -1,3 +1,4 @@
 mysample-generator/example/.stack-work/*
+mysample-generator/example/MySample/.stack-work/*
 cxxlib/src/*.o
 cxxlib/lib/*.so
