@@ -1,0 +1,3 @@
+mysample-generator/example/.stack-work/*
+cxxlib/src/*.o
+cxxlib/lib/*.so
